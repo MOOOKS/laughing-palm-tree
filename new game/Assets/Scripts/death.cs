@@ -7,13 +7,14 @@ public class death : MonoBehaviour
 {
 
     public GameObject player;
+    public Material material;
 
     void OnTriggerEnter(Collider other)
     {
-        print("Triggered");
+        
         if(other.tag == "Notes")
         {
-            print("Death");
+            other.GetComponent<MeshRenderer>().material = material;
             player.GetComponent<onDeath>().Death();
         }
     }

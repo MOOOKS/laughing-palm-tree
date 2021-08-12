@@ -8,7 +8,7 @@ public class moveScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        beat = beat / 60f;
+        beat = beat/6;
     }
 
     // Update is called once per frame

@@ -6,6 +6,9 @@ public class trigger : MonoBehaviour
 {
     public GameObject partPoint;
     
+
+
+    
     
 
     void OnTriggerEnter(Collider other)
